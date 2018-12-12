@@ -18,6 +18,6 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :custom_lane do
-    puts Dir.pwd
+    puts File.expand_path(__FILE__)
   end
 end
